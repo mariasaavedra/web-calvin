@@ -30,7 +30,7 @@ export default async function Home({ searchParams }: Props) {
       {/* New Releases */}
       <section className="">
         <h3 className="my-4 text-xl">New Releases:</h3>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {data.new_releases.map((release) => {
             return (
               <div className="p-8 border rounded ">
@@ -55,7 +55,7 @@ export default async function Home({ searchParams }: Props) {
       {/* Blog */}
       <section>
         <h3 className="my-4 text-xl">Blog:</h3>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {data.posts.map((post) => {
             return (
               <div className="border rounded p-10">

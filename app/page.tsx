@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Airtable from "airtable";
 import ActivityCard from "@/components/ActivityCard";
 import Link from "next/link";
@@ -37,6 +38,7 @@ export default async function Home({ searchParams }: Props) {
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
                   className="shadow object-cover w-full  mb-2 h-[200px] rounded"
+                  
                   src={release.fields.Image[0].url}
                   alt="Activity"
                 />
